@@ -1,11 +1,11 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Layout from "./commonComponents/layout/Layout";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-        <img src="flashlightIcon.png" alt="" />
-        <p>Hello</p>
-    </div>
+    <Router>
+      <Layout>
+      </Layout>
+    </Router>
   );
 }
-
-export default App;

@@ -1,0 +1,50 @@
+.icon {
+  margin: 1rem;
+  width: 5rem;
+  height: 5rem;
+  background-color: rgb(140, 181, 116);
+  border-radius: 90px;
+  position: relative;
+  text-align: center;
+  transition: ease-in-out 0.3s;
+}
+
+.icon:hover {
+  box-shadow: 0px 0px 1.2rem 0px rgb(74, 85, 88) inset;
+  transform: scale(1.1);
+  transition: ease-in-out 0.3s;
+}
+
+.icon img {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%);
+  width: 3rem;
+  height: auto;
+  max-height: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  .icon {
+    margin: 1rem;
+    width: 12vw;
+    height: 12vw;
+  }
+
+  .icon img {
+    width: 7.5vw;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .icon {
+    margin: 1rem;
+    width: 20vw;
+    height: 20vw;
+  }
+
+  .icon img {
+    width: 12vw;
+  }
+}

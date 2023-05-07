@@ -1,0 +1,27 @@
+.iconholder {
+  margin: 2vw;
+  position: absolute;
+  width: fit-content;
+  right: 5vw;
+  top: 40vh;
+}
+
+@media only screen and (max-width: 800px) {
+  .iconholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .iconholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    margin: 0 auto;
+  }
+}
