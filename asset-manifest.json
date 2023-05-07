@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Escape-Room/static/css/main.7e4d24dd.css",
+    "main.js": "/Escape-Room/static/js/main.76b4ec19.js",
+    "index.html": "/Escape-Room/index.html",
+    "main.7e4d24dd.css.map": "/Escape-Room/static/css/main.7e4d24dd.css.map",
+    "main.76b4ec19.js.map": "/Escape-Room/static/js/main.76b4ec19.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e4d24dd.css",
+    "static/js/main.76b4ec19.js"
+  ]
+}
