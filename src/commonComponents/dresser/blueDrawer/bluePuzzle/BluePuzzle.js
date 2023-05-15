@@ -15,9 +15,7 @@ export default function BluePuzzle(props) {
     if (areEqual) {
       alert("Du hast das Rätsel des blauen Zimmers gelöst.");
     } else {
-      alert(
-        "Deine Kombination ist nicht korrekt. Finde die korrekte Kombination um die Schublade zu öffnen!"
-      );
+      alert("Deine Kombination ist nicht korrekt. Finde die korrekte Kombination um die Schublade zu öffnen!");
     }
   }
 
@@ -25,26 +23,11 @@ export default function BluePuzzle(props) {
     <CardEffect>
       <div className={classes.bluePuzzle}>
         <div className={classes.segmentContainer}>
-          <BluePuzzleSegment
-            arrowIndex={0}
-            getArrowCombination={props.getArrowCombination}
-          />
-          <BluePuzzleSegment
-            arrowIndex={1}
-            getArrowCombination={props.getArrowCombination}
-          />
-          <BluePuzzleSegment
-            arrowIndex={2}
-            getArrowCombination={props.getArrowCombination}
-          />
-          <BluePuzzleSegment
-            arrowIndex={3}
-            getArrowCombination={props.getArrowCombination}
-          />
-          <BluePuzzleSegment
-            arrowIndex={4}
-            getArrowCombination={props.getArrowCombination}
-          />
+          <BluePuzzleSegment arrowIndex={0} getArrowCombination={props.getArrowCombination} />
+          <BluePuzzleSegment arrowIndex={1} getArrowCombination={props.getArrowCombination} />
+          <BluePuzzleSegment arrowIndex={2} getArrowCombination={props.getArrowCombination} />
+          <BluePuzzleSegment arrowIndex={3} getArrowCombination={props.getArrowCombination} />
+          <BluePuzzleSegment arrowIndex={4} getArrowCombination={props.getArrowCombination} />
         </div>
         <button onClick={checkCombination}>UNLOCK</button>
       </div>
