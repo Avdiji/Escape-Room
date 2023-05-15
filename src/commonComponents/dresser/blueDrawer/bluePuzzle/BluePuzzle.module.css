@@ -1,0 +1,25 @@
+.bluePuzzle {
+  text-align: center;
+}
+
+.bluePuzzle button {
+  font-weight: bold;
+  margin-top: 5vh;
+  padding: 2vw;
+}
+
+.segmentContainer {
+  display: flex;
+}
+
+@media only screen and (max-width: 800px) {
+  .bluePuzzle button {
+    padding: 3vw;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .bluePuzzle button {
+    padding: 3vw;
+  }
+}

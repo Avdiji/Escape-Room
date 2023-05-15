@@ -1,0 +1,23 @@
+.bluePuzzleSegment{
+    display: flex;
+    width: 7rem;
+    height: 7rem;
+    background-color: rgb(255, 255, 255);
+    margin: 0.5rem;
+    
+}
+
+
+@media only screen and (max-width: 800px) {
+    .bluePuzzleSegment{
+        width: 5rem;
+        height: 5rem;
+    }
+  }
+  
+  @media only screen and (max-width: 520px) {
+    .bluePuzzleSegment{
+        width: 2.6rem;
+        height: 2.6rem;
+    }
+  }
