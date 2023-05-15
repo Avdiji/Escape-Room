@@ -23,7 +23,7 @@ export default function Layout(props) {
         />
       )}
 
-      {props.children}
+      {!notebookOpen && props.children}
     </div>
   );
 }
