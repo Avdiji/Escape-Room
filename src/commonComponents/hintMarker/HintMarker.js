@@ -9,7 +9,7 @@ export default function HintMarker(props) {
   const x = props.x;
   const y = props.y;
 
-  const backgroundColor = props.backgroundColor;
+  const backgroundColor = props.backgroundColor === null ? "rgb(179, 147, 147)" : props.backgroundColor;
   const opacity = props.opacity;
 
   const markerStyle = {
