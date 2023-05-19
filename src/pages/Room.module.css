@@ -1,0 +1,33 @@
+.room {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arrowImageContainer {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+}
+
+.arrowImg{
+    margin: 1rem;
+    width: 5vw;
+}
+
+.roomImg {
+  width: 65vw;
+}
+
+.roomContainer{
+    width: fit-content;
+    background-color: black;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+}
+
+@media only screen and (max-width: 520px) {
+}

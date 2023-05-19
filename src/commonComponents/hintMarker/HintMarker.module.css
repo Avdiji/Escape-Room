@@ -1,6 +1,6 @@
 .hintMarker{
-    width: 3rem;
-    height: 3rem;
+    width: 5vw;
+    height: 5vw;
     position: relative;
     border-radius: 90px;
 
@@ -18,4 +18,10 @@
 .hintMarker a{
     width: fit-content;
     height: auto;
+}
+
+@media only screen and (max-width: 800px) {
+}
+
+@media only screen and (max-width: 520px) {
 }

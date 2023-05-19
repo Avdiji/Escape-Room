@@ -22,7 +22,6 @@ export default function Layout(props) {
           closeNotebook={() => setNotebookOpen(false)}
         />
       )}
-
       {!notebookOpen && props.children}
     </div>
   );
