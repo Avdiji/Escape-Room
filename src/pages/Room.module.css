@@ -10,24 +10,45 @@
   overflow-x: auto;
 }
 
-.arrowImg{
-    margin: 1rem;
-    width: 5vw;
+.arrowImg {
+  margin: 1rem;
+  width: 8rem;
+  transition: ease-in-out 0.3s;
 }
+
+.arrowImg:hover {
+    transform: scale(1.2);
+    margin: 1rem;
+    width: 8rem;
+    transition: ease-in-out 0.3s;
+  }
+
 
 .roomImg {
   width: 65vw;
 }
 
-.roomContainer{
-    width: fit-content;
-    background-color: black;
+.roomContainer {
+  width: fit-content;
+  background-color: black;
 }
 
-
-
 @media only screen and (max-width: 800px) {
+  .room h1 {
+    font-size: larger;
+  }
+
+  .arrowImg {
+    width: 12vw;
+  }
 }
 
 @media only screen and (max-width: 520px) {
+  .room h1 {
+    font-size: large;
+  }
+
+  .arrowImg {
+    width: 12vw;
+  }
 }
