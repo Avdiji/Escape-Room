@@ -11,30 +11,58 @@ export default function Room(props) {
     <div className={classes.room}>
       <h1>{props.title}</h1>
 
-      <Link>
-        <img className={classes.arrowImg} src={process.env.PUBLIC_URL + "/images/roomArrows/arrowUp.png"} alt="" />
-      </Link>
+      {props.hasUp && (
+        <Link to={props.upRoute}>
+          <img
+            className={classes.arrowImg}
+            src={process.env.PUBLIC_URL + "/images/roomArrows/arrowUp.png"}
+            alt=""
+          />
+        </Link>
+      )}
 
       <div className={classes.scrollContainer}>
         <div className={classes.arrowImageContainer}>
-          <Link>
-            <img className={classes.arrowImg} src={process.env.PUBLIC_URL + "/images/roomArrows/arrowLeft.png"} alt="" />
-          </Link>
+          {props.hasLeft && (
+            <Link to={props.leftRoute}>
+              <img
+                className={classes.arrowImg}
+                src={
+                  process.env.PUBLIC_URL + "/images/roomArrows/arrowLeft.png"
+                }
+                alt=""
+              />
+            </Link>
+          )}
 
-          <div className={classes.roomContainer}>
+          <div>
             <img className={classes.roomImg} src={imgSource} alt="" />
             {props.children}
           </div>
 
-          <Link>
-            <img className={classes.arrowImg} src={process.env.PUBLIC_URL + "/images/roomArrows/arrowRight.png"} alt="" />
-          </Link>
+          {props.hasRight && (
+            <Link to={props.rightRoute}>
+              <img
+                className={classes.arrowImg}
+                src={
+                  process.env.PUBLIC_URL + "/images/roomArrows/arrowRight.png"
+                }
+                alt=""
+              />
+            </Link>
+          )}
         </div>
       </div>
 
-      <Link>
-        <img className={classes.arrowImg} src={process.env.PUBLIC_URL + "/images/roomArrows/arrowDown.png"} alt="" />
-      </Link>
+      {props.hasDown && (
+        <Link to={props.downRoute}>
+          <img
+            className={classes.arrowImg}
+            src={process.env.PUBLIC_URL + "/images/roomArrows/arrowDown.png"}
+            alt=""
+          />
+        </Link>
+      )}
     </div>
   );
 }
