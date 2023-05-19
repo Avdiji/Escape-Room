@@ -4,6 +4,12 @@
   align-items: center;
 }
 
+.room h2{
+  padding: 1vw;
+  color: black;
+  background-color: white;
+}
+
 .arrowImageContainer {
   display: flex;
   align-items: center;

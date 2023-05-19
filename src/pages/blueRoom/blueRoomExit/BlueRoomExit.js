@@ -19,7 +19,9 @@ export default function BlueRoomExit(props) {
         hasLeft={true}
         leftRoute="/left"
     >
-        <HintMarker x="15vw" y="-25vw"/>
+        <HintMarker x="15vw" y="-25vw">
+            <h2>Erster Hinweis</h2>
+        </HintMarker>
 
 
     </Room>
