@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-.room h2{
+.room h2 {
   padding: 1vw;
   color: black;
   background-color: white;
@@ -25,6 +25,18 @@
   width: 65vw;
 }
 
+.downButtonSegment {
+  display: flex;
+  margin-bottom: 4vw;
+}
+
+.downButtonSegment button{
+  position: absolute;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  padding: 2vw;
+}
+
 @media only screen and (max-width: 800px) {
   .room h1 {
     font-size: larger;
@@ -32,6 +44,13 @@
 
   .arrowImg {
     width: 12vw;
+  }
+
+
+  .downButtonSegment button{
+    margin-left: 8vw;
+    margin-right: 8vw;
+    padding: 1vw;
   }
 }
 
@@ -42,5 +61,18 @@
 
   .arrowImg {
     width: 12vw;
+  }
+
+  .downButtonSegment {
+    display: flex;
+    margin-bottom: 4vw;
+  }
+
+  .downButtonSegment button{
+    position: relative;
+    font-size: small;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    padding: 1vw;
   }
 }

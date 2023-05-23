@@ -11,12 +11,15 @@ export default function HintMarker(props) {
 
   const backgroundColor = props.backgroundColor === null ? "rgb(179, 147, 147)" : props.backgroundColor;
   const opacity = props.opacity;
+  const size = props.size;
 
   const markerStyle = {
     left: x,
     top: y,
     backgroundColor: backgroundColor,
-    opacity: opacity
+    opacity: opacity,
+    width: size,
+    height: size
   };
 
   const handleBackdropClick = (event) => {

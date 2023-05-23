@@ -1,5 +1,5 @@
-import HintMarker from "../../../commonComponents/hintMarker/HintMarker";
-import Room from "../../Room";
+import HintMarker from "../../commonComponents/hintMarker/HintMarker";
+import Room from "../Room";
 
 export default function BlueRoomExit(props) {
   const getSource = () => {
@@ -14,16 +14,12 @@ export default function BlueRoomExit(props) {
     <Room
       title="Blaues Zimmer"
       src={getSource()}
-        hasUp={true}
-        upRoute="/up"
-        hasLeft={true}
-        leftRoute="/left"
+      hasLeft={true}
+      leftRoute="/Escape-Room/blauesZimmer2"
     >
-        <HintMarker x="15vw" y="-25vw">
-            <h2>Erster Hinweis</h2>
-        </HintMarker>
-
-
+      <HintMarker x="15vw" y="-25vw">
+        <h2>Erster Hinweis</h2>
+      </HintMarker>
     </Room>
   );
 }

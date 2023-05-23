@@ -7,6 +7,9 @@ import { useState } from "react";
 export default function Room(props) {
   const imgSource = process.env.PUBLIC_URL + props.src;
 
+  const leftButtonStyle={ left: "5vw" };
+  const rightButtonStyle={right: "5vw"};
+
   return (
     <div className={classes.room}>
       <h1>{props.title}</h1>
@@ -54,15 +57,21 @@ export default function Room(props) {
         </div>
       </div>
 
-      {props.hasDown && (
-        <Link to={props.downRoute}>
-          <img
-            className={classes.arrowImg}
-            src={process.env.PUBLIC_URL + "/images/roomArrows/arrowDown.png"}
-            alt=""
-          />
-        </Link>
-      )}
+      <div className={classes.downButtonSegment}>
+        {props.hasRoomLeft && <Link to={props.leftRoomRoute}><button style={leftButtonStyle}>{props.leftRoomText}</button></Link>}
+
+        {props.hasDown && (
+          <Link to={props.downRoute}>
+            <img
+              className={classes.arrowImg}
+              src={process.env.PUBLIC_URL + "/images/roomArrows/arrowDown.png"}
+              alt=""
+            />
+          </Link>
+        )}
+
+        {props.hasRoomRight && <Link to={props.rightRoomRoute}><button style={rightButtonStyle}>{props.rightRoomText}</button></Link>}
+      </div>
     </div>
   );
 }
