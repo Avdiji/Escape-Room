@@ -13,7 +13,7 @@ export default function Room(props) {
   return (
     <div className={classes.room}>
       <h1>{props.title}</h1>
-
+      {props.hasRoom && <Link to={props.roomRoute}><button style={rightButtonStyle}>{props.roomText}</button></Link>}
       {props.hasUp && (
         <Link to={props.upRoute}>
           <img
@@ -57,9 +57,6 @@ export default function Room(props) {
         </div>
       </div>
 
-      <div className={classes.downButtonSegment}>
-        {props.hasRoomLeft && <Link to={props.leftRoomRoute}><button style={leftButtonStyle}>{props.leftRoomText}</button></Link>}
-
         {props.hasDown && (
           <Link to={props.downRoute}>
             <img
@@ -69,9 +66,6 @@ export default function Room(props) {
             />
           </Link>
         )}
-
-        {props.hasRoomRight && <Link to={props.rightRoomRoute}><button style={rightButtonStyle}>{props.rightRoomText}</button></Link>}
-      </div>
     </div>
   );
 }

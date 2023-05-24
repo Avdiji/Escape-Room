@@ -1,5 +1,4 @@
 import BluePuzzleButton from "../../commonComponents/dresser/blueDrawer/BluePuzzleButton";
-import HintMarker from "../../commonComponents/hintMarker/HintMarker";
 import Room from "../Room";
 
 export default function BlueRoom2(props) {
@@ -18,16 +17,9 @@ export default function BlueRoom2(props) {
       hasRight={true}
       rightRoute="/Escape-Room"
 
-      hasUp={true}
-      hasLeft={true}
-      hasDown={true}
-
-      hasRoomLeft={true}
-      leftRoomText="Zum Goldenen Zimmer!"
-      leftRoomRoute="/Escape-Room/goldRoom"
-
-      hasRoomRight={true}
-      rightRoomText="Zum Japanischen Zimmer!"
+      hasRoom={true}
+      roomText="<- Zum Goldenen Zimmer"
+      roomRoute="/Escape-Room/goldenesZimmer1"
     >
         <BluePuzzleButton getArrowCombination={props.getArrowCombination} x="47.5vw" y="-9vw"/>
     </Room>
