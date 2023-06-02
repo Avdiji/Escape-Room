@@ -3,7 +3,7 @@ import classes from "./BluePuzzle.module.css";
 import BluePuzzleSegment from "./BluePuzzleSegment";
 
 export default function BluePuzzle(props) {
-  const correctCombination = [0, 0, 0, 0, 0];
+  const correctCombination = [1, 0, 0, 1, 3];
 
   function checkCombination() {
     const areEqual =
@@ -13,7 +13,7 @@ export default function BluePuzzle(props) {
       );
 
     if (areEqual) {
-      alert("Du hast das Rätsel des blauen Zimmers gelöst.");
+      alert("Du hast das Rätsel des blauen Zimmers gelöst. Dein Hinweis lautet -> Schwert: i");
     } else {
       alert("Deine Kombination ist nicht korrekt. Finde die korrekte Kombination um die Schublade zu öffnen!");
     }

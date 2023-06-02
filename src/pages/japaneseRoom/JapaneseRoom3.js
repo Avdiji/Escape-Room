@@ -16,6 +16,10 @@ export default function JapaneseRoom3(props) {
     hasRight={true}
     rightRoute="/Escape-Room/japanischesZimmer2"
     >
+
+      <HintMarker x="32vw" y="-17vw" size="3vw">
+        <h2>Schlafende Frau</h2>
+      </HintMarker>
     </Room>
   );
 }

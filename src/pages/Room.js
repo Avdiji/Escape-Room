@@ -1,13 +1,9 @@
 import { Link } from "react-router-dom";
-import CardEffect from "../commonComponents/cardEffect/CardEffect";
-import BluePuzzleButton from "../commonComponents/dresser/blueDrawer/BluePuzzleButton";
 import classes from "./Room.module.css";
-import { useState } from "react";
 
 export default function Room(props) {
   const imgSource = process.env.PUBLIC_URL + props.src;
 
-  const leftButtonStyle={ left: "5vw" };
   const rightButtonStyle={right: "5vw"};
 
   return (

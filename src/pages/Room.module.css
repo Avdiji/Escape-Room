@@ -10,6 +10,13 @@
   background-color: white;
 }
 
+.room input{
+  margin: 1vw;
+  padding: 1.5vw;
+  width: 5rem;
+  font-size: xx-large;
+}
+
 .room button{
   width: fit-content;
   left: 17vw;
