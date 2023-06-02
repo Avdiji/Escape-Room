@@ -3,8 +3,6 @@ import HintMarker from "../../commonComponents/hintMarker/HintMarker";
 import Room from "../Room";
 
 export default function BlueRoomExit(props) {
-  var [getOpacity, setOpacity] = useState(1);
-
   const getSource = () => {
     if (props.flashlightOn) {
       return "/images/blueRoom/Blau_Sc1_Dunkel_ohne_personcf.png";
@@ -34,8 +32,8 @@ export default function BlueRoomExit(props) {
         <img src={process.env.PUBLIC_URL + "/images/blueRoom/Wuefel.png"} />
       </HintMarker>
 
-      <div onClick={() => setOpacity(0)}>
-        <HintMarker x="33vw" y="-33vw" opacity={getOpacity}>
+      <div onClick={() => props.setOpacity(0)}>
+        <HintMarker x="33vw" y="-33vw" opacity={props.opacity}>
           <h2>
             Willkommen in meinem Schloss.
             <br />

@@ -12,16 +12,16 @@ import BlueCeiling from "./pages/blueRoom/BlueCeiling";
 
 export default function App() {
   var [flashlightOn, setFlashlight] = useState(false);
-  var [leftBlueRoom, setLeftBlueRoom] = useState(false);
   var [getArrowCombination] = useState([0, 0, 0, 0, 0]);
   var [gameFinished,setGameFinished] = useState(false);
+  var [opacity, setOpacity] = useState(1);
 
   return (
     <Router>
       {!gameFinished && <div>
       <Layout setFlashlight={setFlashlight} flashlightOn={flashlightOn}>
         <Routes>
-          <Route path="/Escape-Room" element={<BlueRoomExit flashlightOn={flashlightOn} />} />
+          <Route path="/Escape-Room" element={<BlueRoomExit flashlightOn={flashlightOn} opacity={opacity} setOpacity={setOpacity}/>} />
           <Route path="/Escape-Room/blauesZimmer2" element={<BlueRoom2 flashlightOn={flashlightOn} getArrowCombination={getArrowCombination} /> } />
           <Route path="Escape-Room/blaueDecke" element={<BlueCeiling flashlightOn={flashlightOn}/>} />
 
