@@ -13,7 +13,7 @@ export default function BluePuzzle(props) {
       );
 
     if (areEqual) {
-      alert("Du hast das Rätsel des blauen Zimmers gelöst. Dein Hinweis lautet -> Schwert: i");
+      alert("Du hast das Rätsel des blauen Zimmers gelöst. Dein Hinweis lautet -> Stern: S");
     } else {
       alert("Deine Kombination ist nicht korrekt. Finde die korrekte Kombination um die Schublade zu öffnen!");
     }

@@ -4,9 +4,9 @@ import Room from "../Room";
 export default function BlueRoom2(props) {
   const getSource = () => {
     if (props.flashlightOn) {
-      return "/images/blueRoom/Blau_V2_Sc2_dark.png";
+      return "/images/blueRoom/blau2Dunkel.png";
     } else {
-      return "/images/blueRoom/Blau_V2_Sc2_hell.png";
+      return "/images/blueRoom/blau2Hell.png";
     }
   };
 
@@ -16,12 +16,15 @@ export default function BlueRoom2(props) {
       src={getSource()}
       hasRight={true}
       rightRoute="/Escape-Room"
-
       hasRoom={true}
       roomText="<- Zum Goldenen Zimmer"
       roomRoute="/Escape-Room/goldenesZimmer1"
     >
-        <BluePuzzleButton getArrowCombination={props.getArrowCombination} x="47.5vw" y="-9vw"/>
+      <BluePuzzleButton
+        getArrowCombination={props.getArrowCombination}
+        x="47.5vw"
+        y="-9vw"
+      />
     </Room>
   );
 }

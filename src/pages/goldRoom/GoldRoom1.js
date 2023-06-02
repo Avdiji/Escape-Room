@@ -46,8 +46,7 @@ export default function GoldRoom1(props) {
           <h2>
             Hallo und Willkommen in meinem Schloss.
             <br />
-            Um das Rätsel in diesem Raum zu lösen solltest auf Kerzen und Karten
-            achten.
+            Wenn du das Rätsel des goldenen Raums lösen möchtest musst du im Kerzenlicht pokern!
             <br />
             Aber pass auf... Nicht das dir die Zeit abläuft.
           </h2>

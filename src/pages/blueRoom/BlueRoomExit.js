@@ -1,7 +1,10 @@
+import { useState } from "react";
 import HintMarker from "../../commonComponents/hintMarker/HintMarker";
 import Room from "../Room";
 
 export default function BlueRoomExit(props) {
+  var [getOpacity, setOpacity] = useState(1);
+
   const getSource = () => {
     if (props.flashlightOn) {
       return "/images/blueRoom/Blau_Sc1_Dunkel_ohne_personcf.png";
@@ -20,7 +23,7 @@ export default function BlueRoomExit(props) {
       upRoute="/Escape-Room/blaueDecke"
     >
       <HintMarker x="15vw" y="-25vw">
-        <h2>Stern: S</h2>
+        <h2>Glühbirne: E</h2>
       </HintMarker>
 
       <HintMarker x="15vw" y="-17vw">
@@ -31,16 +34,18 @@ export default function BlueRoomExit(props) {
         <img src={process.env.PUBLIC_URL + "/images/blueRoom/Wuefel.png"} />
       </HintMarker>
 
-      <HintMarker x="33vw" y="-33vw">
-        <h2>
-          Willkommen in meinem Schloss.
-          <br />
-          Wenn du hier wieder raus möchtest musst du meinen Namen erraten.
-          <br />
-          Ich warte im Goldenen Zimmer auf dich. <br />
-          PS: vergiss nicht die Taschenlampe zu benutzen.
-        </h2>
-      </HintMarker>
+      <div onClick={() => setOpacity(0)}>
+        <HintMarker x="33vw" y="-33vw" opacity={getOpacity}>
+          <h2>
+            Willkommen in meinem Schloss.
+            <br />
+            Wenn du hier wieder raus möchtest musst du meinen Namen erraten.
+            <br />
+            Ich warte im Goldenen Zimmer auf dich. <br />
+            PS: vergiss nicht die Taschenlampe zu benutzen.
+          </h2>
+        </HintMarker>
+      </div>
     </Room>
   );
 }
