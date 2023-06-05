@@ -19,6 +19,10 @@ export default function JapaneseRoom2(props) {
     hasLeft={true}
     leftRoute="/Escape-Room/japanischesZimmer3"
     >
+
+      <HintMarker x="49vw" y="-30vw">
+      <img src={ process.env.PUBLIC_URL +  "/images/japaneseRoom/Zettel_close_up.png" }/>
+      </HintMarker>
     </Room>
   );
 }

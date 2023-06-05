@@ -1,4 +1,6 @@
 import BluePuzzleButton from "../../commonComponents/dresser/blueDrawer/BluePuzzleButton";
+import GoldPuzzleButton from "../../commonComponents/dresser/goldDrawer/GoldPuzzleButton";
+import JapanesePuzzleButton from "../../commonComponents/dresser/japaneseDrawer/JapanesePuzzleButton";
 import Room from "../Room";
 
 export default function BlueRoom2(props) {
@@ -22,9 +24,12 @@ export default function BlueRoom2(props) {
     >
       <BluePuzzleButton
         getArrowCombination={props.getArrowCombination}
-        x="47.5vw"
+        x="47vw"
         y="-9vw"
       />
+
+      <GoldPuzzleButton x="47vw" y="-8vw" getGoldPuzzleCombination={props.getGoldPuzzleCombination}/>
+      <JapanesePuzzleButton x="47vw" y="-7.5vw" getJapanesePuzzleCombination={props.getJapanesePuzzleCombination}/>
     </Room>
   );
 }

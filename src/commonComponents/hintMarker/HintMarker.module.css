@@ -1,8 +1,11 @@
 .hintMarker{
+    display: flex;
     width: 5vw;
     height: 5vw;
     position: relative;
     border-radius: 90px;
+    align-items: center;
+    justify-content: center;
 
     opacity: 0;
     background-color: rgb(255, 255, 255);
@@ -17,6 +20,11 @@
 .hintMarker a{
     width: fit-content;
     height: auto;
+}
+
+.markerBackground{
+    margin: 0px;
+    padding: 0px;
 }
 
 

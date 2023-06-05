@@ -1,0 +1,15 @@
+.numberSelector{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.numberSelector img{
+    width: 7vw;
+    transition: ease-in-out 0.3s;
+}
+
+.numberSelector img:hover{
+    transform: scale(1.2);
+    transition: ease-in-out 0.3s;
+}

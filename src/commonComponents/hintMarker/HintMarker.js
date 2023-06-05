@@ -30,7 +30,7 @@ export default function HintMarker(props) {
 
   return (
     <Link>
-      <div className={classes.hintMarker} style={markerStyle} onClick={() => setSelected(true)}/>
+      <div className={classes.hintMarker} style={markerStyle} onClick={() => setSelected(true)}>{props.backgroundText}</div>
       {isSelected && <Backdrop onClick={handleBackdropClick}>{props.children}</Backdrop>}
     </Link>
   );

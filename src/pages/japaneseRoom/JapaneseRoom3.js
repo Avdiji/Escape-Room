@@ -15,10 +15,13 @@ export default function JapaneseRoom3(props) {
 
     hasRight={true}
     rightRoute="/Escape-Room/japanischesZimmer2"
+
+    hasUp={true}
+    upRoute="/Escape-Room/japanischesZimmerDecke"
     >
 
       <HintMarker x="32vw" y="-17vw" size="3vw">
-        <h2>Schlafende Frau</h2>
+        <h2>Blick nach oben und suche die schlafende Frau!</h2>
       </HintMarker>
     </Room>
   );

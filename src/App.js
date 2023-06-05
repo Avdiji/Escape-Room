@@ -9,10 +9,14 @@ import JapaneseRoom1 from "./pages/japaneseRoom/JapaneseRoom1";
 import JapaneseRoom2 from "./pages/japaneseRoom/JapaneseRoom2";
 import JapaneseRoom3 from "./pages/japaneseRoom/JapaneseRoom3";
 import BlueCeiling from "./pages/blueRoom/BlueCeiling";
+import JapaneseRoomCeiling from "./pages/japaneseRoom/JapaneseRoomCeiling";
 
 export default function App() {
   var [flashlightOn, setFlashlight] = useState(false);
   var [getArrowCombination] = useState([0, 0, 0, 0, 0]);
+  var [getGoldPuzzleCombination] = useState(["", ""]);
+  var [getJapanesePuzzleCombination] = useState([0,0]);
+
   var [gameFinished,setGameFinished] = useState(false);
   var [opacity, setOpacity] = useState(1);
 
@@ -22,7 +26,7 @@ export default function App() {
       <Layout setFlashlight={setFlashlight} flashlightOn={flashlightOn}>
         <Routes>
           <Route path="/Escape-Room" element={<BlueRoomExit flashlightOn={flashlightOn} opacity={opacity} setOpacity={setOpacity}/>} />
-          <Route path="/Escape-Room/blauesZimmer2" element={<BlueRoom2 flashlightOn={flashlightOn} getArrowCombination={getArrowCombination} /> } />
+          <Route path="/Escape-Room/blauesZimmer2" element={<BlueRoom2 flashlightOn={flashlightOn} getArrowCombination={getArrowCombination} getGoldPuzzleCombination={getGoldPuzzleCombination} getJapanesePuzzleCombination={getJapanesePuzzleCombination}/> } />
           <Route path="Escape-Room/blaueDecke" element={<BlueCeiling flashlightOn={flashlightOn}/>} />
 
           <Route path="/Escape-Room/goldenesZimmer1" element={<GoldRoom1 flashlightOn={flashlightOn} setGameFinished={setGameFinished}/>}/>
@@ -31,6 +35,7 @@ export default function App() {
           <Route path="/Escape-Room/japanischesZimmer1" element={<JapaneseRoom1 flashlightOn={flashlightOn} />} />
           <Route path="/Escape-Room/japanischesZimmer2" element={<JapaneseRoom2 flashlightOn={flashlightOn} />} />
           <Route path="/Escape-Room/japanischesZimmer3" element={<JapaneseRoom3 flashlightOn={flashlightOn} />} />
+          <Route path="/Escape-Room/japanischesZimmerDecke" element={<JapaneseRoomCeiling flashlightOn={flashlightOn} />} />
         </Routes>
       </Layout>
       </div>}
