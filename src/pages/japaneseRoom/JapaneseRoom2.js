@@ -4,9 +4,9 @@ import Room from "../Room";
 export default function JapaneseRoom2(props) {
   const getSource = () => {
     if (props.flashlightOn) {
-      return "/images/japaneseRoom/Raum_japanisch_3_Dunkel.png";
+      return "/images/japaneseRoom/Raum_japanisch_3_Dunkel_Zettel.png";
     } else {
-      return "/images/japaneseRoom/Raum_japanisch_3_Hell_unveraendert.png"
+      return "/images/japaneseRoom/Raum_japanisch_3_Hell_Zettel.png"
     }
   };
 
